@@ -420,7 +420,7 @@ Specifically
   and destination directories have their modification times updated.
 * The rarely used operations:  `FileSystem.concat()`, `createSnapshot()`,
  `createSymlink()` and `truncate()` all update the modification time.
-* The access time granularity is set in milliseconds `dfs.namenode.access.time.precision`;
+* The access time granularity is set in milliseconds `dfs.namenode.accesstime.precision`;
   the default granularity is 1 hour. If the precision is set to zero, access times
   are not recorded.
 * If a modification or access time is not set, the value of that `FileStatus`
